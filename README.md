@@ -1,16 +1,36 @@
-## Hi there 👋
+# 👋 你好，我是凉城！
 
-<!--
-**sumerf/sumerf** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+一名小县城的高三牲，对Web开发和Windows充满热情。
 
-Here are some ideas to get you started:
+于2015年成为一名Windows Insider和米粉，坚信科技改变世界。
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+学业繁忙，不定期上线，有事请留言。
+
+## 🔧 技能与学习
+
+*   **核心语言:**易语言，PECMD，HTML
+*   **正在学习/提升:** Windows封装，Windows Preinstallation Environment构建，网站开发
+*   **工具:** Git
+
+## 🚀 项目实践
+
+*   **[CowPE Project]([https://cowpe.top/)** - 做纯净好用的PE
+
+## 🔍 寻求
+
+*   系统性学习Python
+
+## 📚 学习资源
+
+*   最近学习：毛泽东选集
+*   关注博客：算了太多我懒得写了
+
+## 📞 联系我
+
+非常期待交流技术、学习经验和潜在的机会！
+
+*   **邮箱:** lcdl6@qq.com
+*   **个人网站:** [传送门](https://20071008.xyz)
+*   欢迎来找我玩哦
+
+> 🌱 保持好奇，持续学习，乐于分享。让我们一起成长！
