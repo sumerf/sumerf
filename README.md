@@ -8,7 +8,7 @@
 
 ## 🔧 技能与学习
 
-*   **核心语言:**易语言，PECMD，HTML
+*   **核心语言**:易语言，PECMD，HTML
 *   **正在学习/提升:** Windows封装，Windows Preinstallation Environment构建，网站开发
 *   **工具:** Git
 
