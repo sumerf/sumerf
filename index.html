@@ -1,0 +1,125 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>凉城的小站</title>
+    <meta name="keywords" content="凉城的小站">
+    <meta name="description" content="凉城的小站">
+    <link rel="icon" href="Picture/tx.jpg">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        body {
+            font-size: 18px;
+            color: #6c767d;
+            background-color: #ebf1f5;
+            background-image: url('Picture/background.png');
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <span class="mobile btn-mobile-menu">
+            <i class="fa fa-bars btn-mobile-menu__icon"></i>
+            <i class="fa fa-chevron-circle-up btn-mobile-close__icon hidden"></i>
+        </span>
+        
+        <div class="panel-main">
+            <div class="panel-main__inner panel-inverted">
+                <div class="panel-main__content">
+                    <a href="#" title="凉城">
+                        <img src="Picture/tx.jpg" width="150" alt="凉城的头像" class="panel-cover__logo logo">
+                    </a>
+                    <h1 class="panel-cover__title panel-title">
+                        <a href="#" title="凉城">凉城</a>
+                    </h1>
+                    
+                    <span class="panel-cover__subtitle panel-subtitle">
+                        <!-- 一言显示区域 -->
+                        <span id="hitokoto-text">加载中...</span>
+                    </span>
+                    
+                    <hr class="panel-cover__divider">
+                    <p class="panel-cover__description" id="susays">岂能尽如人意 但求无愧我心</p>
+                    <hr class="panel-cover__divider">
+                        
+<div>
+<nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+  <!-- QQ -->
+  <li class="navigation__item">
+    <a href="http://wpa.qq.com/msgrd?v=3&uin=1702689231&site=qq&menu=yes" title="QQ" target="_blank">
+      <i class="social fa fa-qq"></i>
+    </a>
+  </li>
+  
+  <!-- Weibo -->
+  <li class="navigation__item">
+    <a href="https://weibo.com/u/7798295471" title="微博" target="_blank">
+      <i class="social fa fa-weibo"></i>
+    </a>
+  </li>
+  
+  <!-- Telegram -->
+  <li class="navigation__item">
+    <a href="https://t.me/lcdl6" title="Telegram" target="_blank">
+      <i class="social fa fa-telegram"></i>
+    </a>
+  </li>
+  
+  <!-- Email -->
+  <li class="navigation__item">
+    <a href="mailto:lcdl6@qq.com" title="邮件">
+      <i class="social fa fa-envelope"></i>
+    </a>
+  </li>
+  
+<!-- 博客 -->
+<li class="navigation__item">
+    <a href="https://blog.cowpe.cn/" title="博客" target="_blank">
+        <i class="social fa fa-pencil"></i>
+    </a>
+</li>
+  </ul>
+</nav>
+</div>
+                    
+                    <p class="footer">
+                        Copyright © 凉城 All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+            <div class="panel-cover--overlay cover-slate"></div>
+        </div>
+    </header>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+
+        // 获取一言数据
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch("https://v1.hitokoto.cn/")
+                .then(res => res.json())
+                .then(data => {
+                    document.getElementById('hitokoto-text').innerText = data.hitokoto;
+                    if (data.from) {
+                        document.getElementById('hitokoto-text').innerText += ' —— ' + data.from;
+                    }
+                })
+                .catch(() => {
+                    document.getElementById('hitokoto-text').innerText = '享受当下，珍惜每一刻。';
+                });
+        });
+    </script>
+</body>
+</html>
